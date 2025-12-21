@@ -1,13 +1,13 @@
 # Taki website
 ## About
-This is a static website published on GitHub Pages
+This is a static website published on GitHub Pages.
 
 
 ## Motivation
 This website was created to try out GitHub Pages and as a place to release my future self-made services.
 
 ## Tech
-- HTML / CSS
+- HTML / CSS /Java Script
 - GitHub Pages
 - AI tool: cline
 
