@@ -7,7 +7,7 @@ This is a static website published on GitHub Pages.
 This website was created to try out GitHub Pages and as a place to release my future self-made services.
 
 ## Tech
-- HTML / CSS /Java Script
+- HTML / CSS
 - GitHub Pages
 - AI tool: cline
 
