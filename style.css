@@ -1,8 +1,17 @@
 :root {
     --primary-color: #2da44e;
+    --primary-dark: #116329;
     --bg-color: #f6f8fa;
     --text-color: #24292f;
+    --muted-color: #57606a;
     --border-color: #d0d7de;
+    --surface-color: #ffffff;
+    --accent-bg: #ddf4ff;
+    --accent-text: #0969da;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -14,25 +23,64 @@ body {
     padding: 0;
 }
 
-.container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #ffffff;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+a {
+    color: var(--accent-text);
+    text-decoration: none;
 }
 
-header {
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 880px;
+    margin: 40px auto;
+    padding: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.site-header {
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 24px;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+}
+
+.nav-brand {
+    margin-right: auto;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.hero {
+    max-width: 720px;
+}
+
+.eyebrow {
+    color: var(--primary-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin: 0 0 8px;
+    text-transform: uppercase;
 }
 
 h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
 }
 
 h2 {
@@ -41,48 +89,127 @@ h2 {
     margin-top: 32px;
 }
 
+h3 {
+    margin-bottom: 8px;
+}
+
 .tagline {
-    color: #57606a;
+    color: var(--muted-color);
     font-size: 1.1rem;
+    margin-bottom: 0;
 }
 
-.tech-list {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-}
-
-.tech-tag {
-    background: #ddf4ff;
-    color: #0969da;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-}
-
-.project-placeholder {
-    border: 2px dashed var(--border-color);
-    padding: 40px;
-    text-align: center;
+.project-card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid var(--border-color);
     border-radius: 6px;
-    color: #57606a;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 16px;
+}
+
+.project-card h3 {
+    font-size: 1.45rem;
+    margin: 0 0 8px;
+}
+
+.project-card p:last-child {
+    margin-bottom: 0;
+}
+
+.button-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button-link:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button-link.secondary {
+    background: #ffffff;
+    color: var(--primary-dark);
+}
+
+.button-link.secondary:hover {
+    background: #f0fff4;
+    color: var(--primary-dark);
+}
+
+.feature-list {
+    padding-left: 20px;
+}
+
+.page-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.policy h3 {
+    color: var(--muted-color);
+    font-size: 1rem;
+}
+
+.contact-box {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 16px;
+    background: #f6f8fa;
+}
+
+.muted {
+    color: var(--muted-color);
 }
 
 footer {
     text-align: center;
     margin-top: 40px;
-    padding: 20px;
-    color: #57606a;
+    padding: 20px 0 0;
+    color: var(--muted-color);
     font-size: 0.9rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .container {
         margin: 10px;
-        padding: 15px;
+        padding: 16px;
+    }
+
+    .nav {
+        justify-content: flex-start;
+        margin-bottom: 24px;
+    }
+
+    .nav-brand {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.85rem;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .button-link {
+        width: 100%;
     }
 }
