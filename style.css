@@ -90,6 +90,28 @@ a:hover {
     max-width: 680px;
 }
 
+.hero-title {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.hero-icon {
+    display: block;
+    width: 58px;
+    height: 58px;
+    flex: 0 0 auto;
+    object-fit: cover;
+}
+
+.hero-icon.avatar {
+    border-radius: 50%;
+}
+
+.hero-icon.app {
+    border-radius: 14px;
+}
+
 .eyebrow {
     color: var(--muted-color);
     font-size: 0.78rem;
@@ -137,6 +159,26 @@ h3 {
 .project-card h3 {
     font-size: 1.45rem;
     margin: 0 0 8px;
+}
+
+.project-heading {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.project-heading .eyebrow {
+    margin-bottom: 4px;
+}
+
+.app-icon {
+    display: block;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .project-card p:last-child {
@@ -269,6 +311,19 @@ footer p {
 
     h1 {
         font-size: 2rem;
+    }
+
+    .hero-title {
+        gap: 12px;
+    }
+
+    .hero-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero-icon.app {
+        border-radius: 12px;
     }
 
     .project-card {
