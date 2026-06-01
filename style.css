@@ -92,14 +92,14 @@ a:hover {
 
 .hero-title {
     display: flex;
-    gap: 14px;
+    gap: 10px;
     align-items: center;
 }
 
 .hero-icon {
     display: block;
-    width: 58px;
-    height: 58px;
+    width: 42px;
+    height: 42px;
     flex: 0 0 auto;
     object-fit: cover;
 }
@@ -109,7 +109,7 @@ a:hover {
 }
 
 .hero-icon.app {
-    border-radius: 14px;
+    border-radius: 10px;
 }
 
 .eyebrow {
@@ -163,7 +163,7 @@ h3 {
 
 .project-heading {
     display: flex;
-    gap: 12px;
+    gap: 10px;
     align-items: center;
     margin-bottom: 12px;
 }
@@ -174,10 +174,10 @@ h3 {
 
 .app-icon {
     display: block;
-    width: 44px;
-    height: 44px;
+    width: 34px;
+    height: 34px;
     flex: 0 0 auto;
-    border-radius: 10px;
+    border-radius: 8px;
     object-fit: cover;
 }
 
@@ -314,16 +314,16 @@ footer p {
     }
 
     .hero-title {
-        gap: 12px;
+        gap: 10px;
     }
 
     .hero-icon {
-        width: 48px;
-        height: 48px;
+        width: 36px;
+        height: 36px;
     }
 
     .hero-icon.app {
-        border-radius: 12px;
+        border-radius: 8px;
     }
 
     .project-card {
