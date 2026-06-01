@@ -92,23 +92,30 @@ a:hover {
 
 .hero-title {
     display: flex;
-    gap: 10px;
+    gap: 18px;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero-copy {
+    min-width: 0;
 }
 
 .hero-icon {
     display: block;
-    width: 42px;
-    height: 42px;
     flex: 0 0 auto;
     object-fit: cover;
 }
 
 .hero-icon.avatar {
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
 }
 
 .hero-icon.app {
+    width: 52px;
+    height: 52px;
     border-radius: 10px;
 }
 
@@ -165,6 +172,7 @@ h3 {
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 12px;
 }
 
@@ -314,15 +322,17 @@ footer p {
     }
 
     .hero-title {
-        gap: 10px;
+        gap: 14px;
     }
 
-    .hero-icon {
-        width: 36px;
-        height: 36px;
+    .hero-icon.avatar {
+        width: 72px;
+        height: 72px;
     }
 
     .hero-icon.app {
+        width: 42px;
+        height: 42px;
         border-radius: 8px;
     }
 
