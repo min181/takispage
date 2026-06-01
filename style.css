@@ -115,13 +115,8 @@ a:hover {
 }
 
 .avatar-frame {
-    display: grid;
-    width: 104px;
-    height: 104px;
+    display: block;
     flex: 0 0 auto;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--soft-surface);
 }
 
 .hero-icon.app {
@@ -183,7 +178,7 @@ h3 {
     display: flex;
     gap: 14px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 12px;
 }
 
@@ -342,8 +337,8 @@ footer p {
     }
 
     .avatar-frame {
-        width: 86px;
-        height: 86px;
+        width: auto;
+        height: auto;
     }
 
     .hero-icon.app {
