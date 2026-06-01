@@ -68,6 +68,18 @@ a:hover {
     text-decoration: none;
 }
 
+.nav .nav-contact {
+    background: var(--primary-color);
+    color: #ffffff;
+    font-weight: 650;
+}
+
+.nav .nav-contact:hover,
+.nav .nav-contact[aria-current="page"] {
+    background: var(--primary-dark);
+    color: #ffffff;
+}
+
 .nav-brand {
     margin-right: auto;
     color: var(--text-color);
