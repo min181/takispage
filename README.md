@@ -9,7 +9,7 @@ This is a static website for iOS apps and small tools developed by Taki, publish
 - `index.html`: Taki's apps top page
 - `screen-palette.html`: Screen Palette app introduction page
 - `screen-palette-privacy.html`: Privacy Policy for Screen Palette
-- `screen-palette-contact.html`: Temporary contact page for Screen Palette
+- `contact.html`: Contact page for Taki's apps
 
 ## Tech
 
