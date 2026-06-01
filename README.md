@@ -1,12 +1,12 @@
-# Taki iOS App Portfolio
+# Taki's Apps
 
 ## About
 
-This is a static portfolio website published with GitHub Pages.
+This is a static website for iOS apps and small tools developed by Taki, published with GitHub Pages.
 
 ## Pages
 
-- `index.html`: Portfolio top page
+- `index.html`: Taki's apps top page
 - `screen-palette.html`: Screen Palette app introduction page
 - `screen-palette-privacy.html`: Privacy Policy for Screen Palette
 - `screen-palette-contact.html`: Temporary contact page for Screen Palette
