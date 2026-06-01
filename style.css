@@ -94,10 +94,11 @@ a:hover {
     display: flex;
     gap: 18px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .hero-copy {
+    flex: 0 1 auto;
     min-width: 0;
 }
 
@@ -113,10 +114,20 @@ a:hover {
     border-radius: 50%;
 }
 
+.avatar-frame {
+    display: grid;
+    width: 104px;
+    height: 104px;
+    flex: 0 0 auto;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--soft-surface);
+}
+
 .hero-icon.app {
-    width: 52px;
-    height: 52px;
-    border-radius: 10px;
+    width: 112px;
+    height: 112px;
+    border-radius: 24px;
 }
 
 .eyebrow {
@@ -170,9 +181,9 @@ h3 {
 
 .project-heading {
     display: flex;
-    gap: 10px;
+    gap: 14px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 12px;
 }
 
@@ -182,10 +193,10 @@ h3 {
 
 .app-icon {
     display: block;
-    width: 34px;
-    height: 34px;
+    width: 72px;
+    height: 72px;
     flex: 0 0 auto;
-    border-radius: 8px;
+    border-radius: 16px;
     object-fit: cover;
 }
 
@@ -330,10 +341,21 @@ footer p {
         height: 72px;
     }
 
+    .avatar-frame {
+        width: 86px;
+        height: 86px;
+    }
+
     .hero-icon.app {
-        width: 42px;
-        height: 42px;
-        border-radius: 8px;
+        width: 88px;
+        height: 88px;
+        border-radius: 18px;
+    }
+
+    .app-icon {
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
     }
 
     .project-card {
