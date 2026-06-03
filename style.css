@@ -201,8 +201,7 @@ h3 {
 
 .project-description {
     width: 100%;
-    text-align: justify;
-    text-align-last: right;
+    text-align: left;
 }
 
 .project-card p:last-child {
