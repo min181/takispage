@@ -294,8 +294,24 @@ h3 {
 .page-links {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 12px;
     margin-top: 12px;
+}
+
+.app-store-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.app-store-link:hover {
+    text-decoration: none;
+}
+
+.app-store-link img {
+    display: block;
+    width: 148px;
+    height: auto;
 }
 
 .language-switch {
@@ -427,6 +443,11 @@ footer p {
 
     .button-link {
         width: 100%;
+    }
+
+    .app-store-link {
+        width: 100%;
+        justify-content: center;
     }
 
     .language-switch {
