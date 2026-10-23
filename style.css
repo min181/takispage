@@ -159,14 +159,22 @@ h3 {
 }
 
 .project-card {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 24px;
-    align-items: center;
     border-radius: 8px;
     padding: 18px 20px;
     margin-top: 18px;
     background: var(--soft-surface);
+}
+
+#screen-palette {
+    background: #edf4fc;
+}
+
+#koroai {
+    background: #eff5e8;
+}
+
+#gesture-video-player {
+    background: #fcf0e6;
 }
 
 .project-card h3 {
@@ -440,7 +448,6 @@ footer p {
     }
 
     .project-card {
-        grid-template-columns: 1fr;
         padding: 16px;
     }
 
